@@ -249,4 +249,64 @@ h4{
 }
 
 
+@media (max-width: 768px) {
+  body {
+    margin: 2%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .contenido_cv {
+    flex-direction: column;
+  }
+
+  .habilidades,
+  .experiencia {
+    width: 100%;
+    display: block;
+    padding: 5%;
+  }
+
+  .contenedor_foto_perfil {
+    width: 180px;
+    height: 180px;
+    margin: 10% auto;
+    display: block;
+  }
+
+  .nombre_puesto {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  .experiencia h3 {
+    text-align: left;
+  }
+
+  .nombre_empresa,
+  .año_puesto {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .grafico {
+    margin-bottom: 10px;
+  }
+}
 
