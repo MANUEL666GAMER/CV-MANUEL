@@ -4,26 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae</title>
-    <link rel="stylesheet" href="estilo.css">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="CV de Manuel Yovani Perez Alegria - Estudiante de Ingeniería en Software especializado en desarrollo web, APIs REST y bases de datos. Disponible para prácticas profesionales.">
+    <meta name="keywords" content="Manuel Yovani Perez Alegria, Ingeniero en Software, Desarrollador Web, JavaScript, PHP, Java, API REST, JWT, MySQL, React, TypeScript">
+    <meta name="author" content="Manuel Yovani Perez Alegria">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags (para redes sociales) -->
+    <meta property="og:title" content="CV - Manuel Yovani Perez Alegria | Ingeniero en Software">
+    <meta property="og:description" content="Estudiante de Ingeniería en Software con experiencia en desarrollo web, APIs REST y bases de datos.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/Fotografía de estudiante.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CV - Manuel Yovani Perez Alegria">
+    <meta name="twitter:description" content="Ingeniero en Software especializado en desarrollo web y APIs REST">
+    
+    <title>CV - Manuel Yovani Perez Alegria | Ingeniero en Software</title>
+    
+    <link rel="stylesheet" href="estilo-mejorado.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  
+    <link rel="canonical" href="https://tu-dominio.com">
 </head>
 
 <body>
     <div class="container">
-        <div class="cabecera">
-            <div class="contenedor_foto_perfil"><img src="img/Fotografía de estudiante.jpg"></div>
+        <header class="cabecera">
+            <div class="contenedor_foto_perfil">
+                <img src="img/Fotografía de estudiante.jpg" alt="Foto de perfil de Manuel Yovani Perez Alegria">
+            </div>
             <div class="nombre_puesto">
                 <h1>Manuel Yovani Perez Alegria</h1>
-                <h2>Ingeniería en Software en formacion</h2>
+                <h2>Ingeniería en Software en formación</h2>
             </div>
-        </div>
+        </header>
 
-
-        <div class="contenido_cv">
-
-            <section class="habilidades">
+        <main class="contenido_cv">
+            <aside class="habilidades">
                 <h3>Perfil Profesional</h3>
                 <hr>
                 <br>
@@ -36,84 +55,125 @@
                     desarrollo de proyectos reales.
                 </p>
                 <br>
-                <h3> <i class="fas fa-cogs"></i> Habilidades</h3>
+                <h3><i class="fas fa-cogs"></i> Habilidades</h3>
                 <hr>
                 <br>
-                <div class="grafico">
-                    <div class="donut-hole"></div>
-                    <div class="sector" id="sector1"></div>
-                    <div class="sector" id="sector2"></div>
-                    <div class="sector" id="sector3"></div>
+                <div class="habilidad-item">
+                    <div class="grafico">
+                        <div class="donut-hole"></div>
+                        <div class="sector" id="sector1"></div>
+                        <div class="sector" id="sector2"></div>
+                        <div class="sector" id="sector3"></div>
+                    </div>
+                    <div class="habilidad">Trabajo en Equipo</div>
                 </div>
-                <div class="habilidad">Trabajo en Equipo</div>
                 <br>
-                <div class="grafico">
-                    <div class="donut-hole"></div>
-                    <div class="sector" id="sector1"></div>
-                    <div class="sector" id="sector2"></div>
-                    <div class="sector" id="sector3"></div>
+                <div class="habilidad-item">
+                    <div class="grafico">
+                        <div class="donut-hole"></div>
+                        <div class="sector" id="sector1"></div>
+                        <div class="sector" id="sector2"></div>
+                        <div class="sector" id="sector3"></div>
+                    </div>
+                    <div class="habilidad">Liderazgo</div>
                 </div>
-                <div class="habilidad">Liderazgo</div>
                 <br><br>
 
                 <h3><i class="fas fa-envelope"></i> Información de Contacto</h3>
                 <hr>
                 <br>
                 <ul>
-                    <li>Email: manuelyovaniperez@gmail.com</li>
-                    <li>Teléfono: 9983714783</li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/manuel-yovani-perez-alegria-a0a002320" target="_blank">Perfil en LinkedIn</a></li>
+                    <li><i class="fas fa-envelope"></i> Email: <a href="mailto:manuelyovaniperez@gmail.com">manuelyovaniperez@gmail.com</a></li>
+                    <li><i class="fas fa-phone"></i> Teléfono: <a href="tel:+529983714783">998 371 4783</a></li>
+                    <li><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/manuel-yovani-perez-alegria-a0a002320" target="_blank" rel="noopener noreferrer">Perfil en LinkedIn</a></li>
                 </ul>
-            </section>
+            </aside>
 
             <section class="experiencia">
-                <h3> <i class="fas fa-graduation-cap"></i> Formación académica</h3>
+                <h3><i class="fas fa-graduation-cap"></i> Formación académica</h3>
                 <hr>
-                <h4>Ingeniería en Software</h4>
-                <div class="nombre_empresa">Universidad Politécnica de Quintana Roo</div>
-                <div class="año_puesto">2023-Actualmente estudiando</div>
-                <p class="descripcion_puesto">Finalizando actualmente el 5to cuatrimestre.</p>
+                <article class="item-experiencia">
+                    <h4>Ingeniería en Software</h4>
+                    <div class="detalles-item">
+                        <div class="nombre_empresa">Universidad Politécnica de Quintana Roo</div>
+                        <div class="año_puesto">2023 - Actualmente estudiando</div>
+                    </div>
+                    <p class="descripcion_puesto">Finalizando actualmente el 5to cuatrimestre.</p>
+                </article>
                 <br>
 
                 <h3><i class="fas fa-briefcase"></i> Habilidades Técnicas</h3>
                 <hr>
                 <br>
-                <h4>Lenguajes de programación</h4>
-                <div class="nombre_empresa">JAVA, JavaScript y PHP</div>
+                <article class="item-habilidad-tecnica">
+                    <h4>Lenguajes de programación</h4>
+                    <div class="nombre_empresa">JAVA, JavaScript y PHP</div>
+                </article>
                 <br>
-                <h4>Frameworks y Tecnologías</h4>
-                <div class="nombre_empresa">API REST, JWT</div>
+                <article class="item-habilidad-tecnica">
+                    <h4>Frameworks y Tecnologías</h4>
+                    <div class="nombre_empresa">API REST, JWT</div>
+                </article>
                 <br>
-                <h4>Bases de datos</h4>
-                <div class="nombre_empresa">MySQL</div>
+                <article class="item-habilidad-tecnica">
+                    <h4>Bases de datos</h4>
+                    <div class="nombre_empresa">MySQL</div>
+                </article>
                 <br>
-                <h4>Lenguajes de marcado y hoja de estilo</h4>
-                <div class="nombre_empresa">HTML y CSS</div>
+                <article class="item-habilidad-tecnica">
+                    <h4>Lenguajes de marcado y hoja de estilo</h4>
+                    <div class="nombre_empresa">HTML y CSS</div>
+                </article>
                 <br>
 
                 <h3><i class="fas fa-project-diagram"></i> Proyectos trabajados</h3>
                 <hr>
-                <h4>Sistema de biblioteca - Cliente/Servidor</h4>
-                <div class="nombre_empresa">
-                    Desarrollo de una API REST con autenticación mediante JSON Web Tokens (JWT) que
-                    proporciona diversos endpoints para gestionar datos. La API está implementada en JavaScript y es
-                    consumida desde un cliente TypeScript en React.
-                    <br><br>
-                    <a href="https://github.com/MANUEL666GAMER/Biblioteca" target="_blank" class="btn-github">
-                        <i class="fab fa-github"></i> Ver código en GitHub
-                    </a>
-                </div>
-                <h4>Sistema de Emisión de Pases – Área de Prevención</h4>
-                <div class="nombre_empresa">
-                    Este proyecto tiene como objetivo digitalizar y optimizar el proceso de emisión de pases de entrada y salida de artículos personales en el área de prevención de una organización. Los pases son comprobantes que validan la entrada o retiro de objetos como teléfonos, laptops, audífonos, etc., por parte de trabajadores, proveedores u otras personas autorizadas.
-                    <br><br>
-                    <a href="https://github.com/waryduchess/pases_prevenci-n" target="_blank" class="btn-github">
-                        <i class="fab fa-github"></i> Ver código en GitHub
-                    </a>
-            </section>
+                <br>
+                
+                <div class="proyectos-grid">
+                    <article class="proyecto-card">
+                        <h4>Sistema de biblioteca - Cliente/Servidor</h4>
+                        <p class="descripcion-proyecto">
+                            Desarrollo de una API REST con autenticación mediante JSON Web Tokens (JWT) que
+                            proporciona diversos endpoints para gestionar datos. La API está implementada en JavaScript y es
+                            consumida desde un cliente TypeScript en React.
+                        </p>
+                        <a href="https://github.com/MANUEL666GAMER/Biblioteca" target="_blank" rel="noopener noreferrer" class="btn-github">
+                            <i class="fab fa-github"></i> Ver código en GitHub
+                        </a>
+                    </article>
 
-        </div>
+                    <article class="proyecto-card">
+                        <h4>Sistema de Emisión de Pases – Área de Prevención</h4>
+                        <p class="descripcion-proyecto">
+                            Este proyecto tiene como objetivo digitalizar y optimizar el proceso de emisión de pases de entrada y salida de artículos personales en el área de prevención de una organización. Los pases son comprobantes que validan la entrada o retiro de objetos como teléfonos, laptops, audífonos, etc., por parte de trabajadores, proveedores u otras personas autorizadas.
+                        </p>
+                        <a href="https://github.com/waryduchess/pases_prevenci-n" target="_blank" rel="noopener noreferrer" class="btn-github">
+                            <i class="fab fa-github"></i> Ver código en GitHub
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </main>
     </div>
+
+    <!-- Schema.org structured data para SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Manuel Yovani Perez Alegria",
+      "jobTitle": "Estudiante de Ingeniería en Software",
+      "email": "manuelyovaniperez@gmail.com",
+      "telephone": "+52-998-371-4783",
+      "url": "https://www.linkedin.com/in/manuel-yovani-perez-alegria-a0a002320",
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Universidad Politécnica de Quintana Roo"
+      },
+      "knowsAbout": ["JavaScript", "Java", "PHP", "API REST", "JWT", "MySQL", "HTML", "CSS", "React", "TypeScript"]
+    }
+    </script>
 </body>
 
 </html>

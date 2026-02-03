@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -28,83 +29,82 @@ header h2 {
   opacity: 0.5;
 }
 
-h1{
+h1 {
   font-size: 4em;
 }
 
-h2{
+h2 {
   font-size: 1.5em;
 }
 
-
-h3{
+h3 {
   font-size: 1.5em;
   margin-bottom: 1%;
 }
 
-h4{
+h4 {
   margin-top: 5%;
 }
 
-.habilidades i{
-    font-size: 0.8em;
-    color: #5106e8;
-    background: #fff;
-    border-radius: 2em;
-    padding: 2px;
-    width: 1.5em;
-    height: 1.5em;
-    text-align: center;
-    vertical-align: center;
-    line-height: 1.5em; 
+.habilidades i {
+  font-size: 0.8em;
+  color: #5106e8;
+  background: #fff;
+  border-radius: 2em;
+  padding: 2px;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  vertical-align: center;
+  line-height: 1.5em;
 }
 
-.experiencia i{
-    font-size: 0.8em;
-    color: #fff;
-    background: #5106e8;
-    border-radius: 2em;
-    padding: 2px;
-    width: 1.5em;
-    height: 1.5em;
-    text-align: center;
-    vertical-align: center;
-    line-height: 1.5em; 
+.experiencia i {
+  font-size: 0.8em;
+  color: #fff;
+  background: #5106e8;
+  border-radius: 2em;
+  padding: 2px;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  vertical-align: center;
+  line-height: 1.5em;
 }
 
-
-.container{
+.container {
   background-color: #1F253D;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   width: 80%;
   margin: 0 auto;
-   position: relative;
+  position: relative;
   z-index: 1;
 }
 
-.cabecera{
+.cabecera {
   position: relative;
+  padding: 2%;
 }
 
 .cabecera::before {
- content: '';
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('img/fondo_cabecera_cv.png'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen */
+  background-image: url('img/fondo_cabecera_cv.png');
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.3; /* Opacidad del 50% para la imagen de fondo */
-  z-index: -1; /* Coloca el pseudo-elemento detrás del contenido del contenedor */
+  opacity: 0.3;
+  z-index: -1;
 }
 
-.contenedor_foto_perfil{
-  width: 280px; /* Ancho inicial del contenedor */
-  height: 280px; /* Altura inicial del contenedor */
-  border-radius: 50%; /* Borde redondeado para hacerlo circular */
-  overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
+.contenedor_foto_perfil {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
   display: inline-block;
   vertical-align: middle;
   border: 7px solid #5106e8;
@@ -112,47 +112,67 @@ h4{
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
-
-.contenedor_foto_perfil img{
-  width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
-  height: auto; /* Altura automática para mantener la proporción */
-  display: block; /* La imagen se comporta como un bloque para evitar espacio adicional */
+.contenedor_foto_perfil img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.nombre_puesto{
+.nombre_puesto {
   display: inline-block;
   vertical-align: middle;
   margin-left: 1%;
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
-
-
-.contenido_cv{
+.contenido_cv {
   display: flex;
   width: 100%;
 }
 
-.habilidades{
+.habilidades {
   display: inline-block;
   vertical-align: top;
   background-color: #5106e8;
   padding: 5%;
-  width: 28%;
+  width: 35%;
 }
 
-.habilidades ul{
+.habilidades ul {
   margin-left: 5%;
+  list-style: none;
 }
 
+.habilidades ul li {
+  margin-bottom: 10px;
+}
 
-.carta_presentacion{
+.habilidades ul li i {
+  margin-right: 8px;
+}
+
+.habilidades ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.habilidades ul li a:hover {
+  opacity: 0.8;
+}
+
+.carta_presentacion {
   text-align: justify;
+  line-height: 1.6;
+}
+
+.habilidad-item {
+  margin-bottom: 15px;
 }
 
 .grafico {
-  width: 34px; /* Modifica este valor para cambiar el tamaño del gráfico */
-  height: 34px; /* Modifica este valor para cambiar el tamaño del gráfico */
+  width: 34px;
+  height: 34px;
   position: relative;
   border-radius: 50%;
   overflow: hidden;
@@ -163,14 +183,14 @@ h4{
 
 .donut-hole {
   position: absolute;
-  width: 60%; /* Modifica este valor para cambiar el tamaño del agujero */
-  height: 60%; /* Modifica este valor para cambiar el tamaño del agujero */
-  background-color: #5106e8; /* Color del centro de la rosquilla */
+  width: 60%;
+  height: 60%;
+  background-color: #5106e8;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  z-index: 1; /* Colocamos el centro por debajo de los sectores del gráfico */
+  z-index: 1;
 }
 
 .sector {
@@ -184,52 +204,94 @@ h4{
 
 #sector1 {
   transform: rotate(0deg);
-  background-color: #f91c8a; /* Color del sector 1 */
+  background-color: #f91c8a;
 }
 
 #sector2 {
   transform: rotate(120deg);
-  background-color: #2d0b7c; /* Color del sector 2 */
+  background-color: #2d0b7c;
 }
 
 #sector3 {
   transform: rotate(240deg);
-  background-color: #58d1bc; /* Color del sector 3 */
+  background-color: #58d1bc;
 }
 
-.habilidad{
+.habilidad {
   display: inline-block;
   margin-top: 1%;
+  margin-left: 10px;
   vertical-align: middle;
 }
 
-.experiencia{
+.experiencia {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   padding: 5%;
-  width: 50%;
+  width: 65%;
 }
 
-.experiencia h3{
+.experiencia h3 {
   text-align: right;
 }
 
-.nombre_empresa{
-  display: inline-block;
-    vertical-align: top;
-    width: 50%;
+.detalles-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.año_puesto{
-  display: inline-block;
-    vertical-align: top;
-    text-align: right;
-    width: 49%;
+.nombre_empresa {
+  flex: 1;
+  min-width: 200px;
 }
 
-.descripcion_puesto{
-  margin-top:3%;
+.año_puesto {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.descripcion_puesto {
+  margin-top: 3%;
   text-align: justify;
+  line-height: 1.6;
+}
+
+/* Estilos para grid de proyectos */
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.proyecto-card {
+  background-color: rgba(81, 6, 232, 0.1);
+  border: 2px solid #5106e8;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(81, 6, 232, 0.3);
+}
+
+.proyecto-card h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #58d1bc;
+  font-size: 1.2em;
+}
+
+.descripcion-proyecto {
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  min-height: 120px;
 }
 
 .btn-github {
@@ -240,22 +302,44 @@ h4{
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn-github:hover {
   background-color: #444c56;
   color: #fff;
+  transform: scale(1.05);
 }
 
+.btn-github i {
+  margin-right: 8px;
+}
 
-@media (max-width: 768px) {
+/* Media Queries para responsive design */
+
+/* Tablets grandes y pantallas medianas */
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  .proyectos-grid {
+    gap: 20px;
+  }
+}
+
+/* Tablets y pantallas pequeñas */
+@media (max-width: 992px) {
   body {
-    margin: 2%;
+    margin: 3%;
   }
 
   .container {
-    width: 100%;
+    width: 95%;
   }
 
   .contenido_cv {
@@ -266,50 +350,31 @@ h4{
   .experiencia {
     width: 100%;
     display: block;
-    padding: 5%;
   }
 
-  .contenedor_foto_perfil {
-    width: 180px;
-    height: 180px;
-    margin: 10% auto;
-    display: block;
+  .habilidades {
+    padding: 8%;
   }
 
-  .nombre_puesto {
-    display: block;
-    margin: 10px auto;
-    text-align: center;
-  }
-
-  h1 {
-    font-size: 2em;
-  }
-
-  h2 {
-    font-size: 1.2em;
-  }
-
-  h3 {
-    font-size: 1.3em;
+  .experiencia {
+    padding: 8%;
   }
 
   .experiencia h3 {
     text-align: left;
   }
 
-  .nombre_empresa,
-  .año_puesto {
-    display: block;
-    width: 100%;
-    text-align: left;
+  .proyectos-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
-  .grafico {
-    margin-bottom: 10px;
+  .descripcion-proyecto {
+    min-height: auto;
   }
 }
 
+/* Móviles grandes */
 @media (max-width: 768px) {
   body {
     margin: 2%;
@@ -319,54 +384,118 @@ h4{
     width: 100%;
   }
 
-  .contenido_cv {
-    flex-direction: column;
-  }
-
-  .habilidades,
-  .experiencia {
-    width: 100%;
-    display: block;
+  .cabecera {
     padding: 5%;
   }
 
   .contenedor_foto_perfil {
-    width: 180px;
-    height: 180px;
-    margin: 10% auto;
+    width: 200px;
+    height: 200px;
+    margin: 5% auto;
     display: block;
   }
 
   .nombre_puesto {
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
     text-align: center;
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 2.2em;
   }
 
   h2 {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 
   h3 {
     font-size: 1.3em;
   }
 
-  .experiencia h3 {
-    text-align: left;
+  h4 {
+    font-size: 1.1em;
   }
 
-  .nombre_empresa,
+  .detalles-item {
+    flex-direction: column;
+  }
+
   .año_puesto {
-    display: block;
-    width: 100%;
     text-align: left;
+    margin-top: 5px;
   }
 
-  .grafico {
-    margin-bottom: 10px;
+  .proyecto-card {
+    padding: 15px;
+  }
+
+  .btn-github {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  body {
+    margin: 1%;
+  }
+
+  .contenedor_foto_perfil {
+    width: 150px;
+    height: 150px;
+    border-width: 5px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .habilidades,
+  .experiencia {
+    padding: 5%;
+  }
+
+  .proyecto-card {
+    padding: 12px;
+  }
+
+  .proyecto-card h4 {
+    font-size: 1.1em;
+  }
+
+  .descripcion-proyecto {
+    font-size: 0.95em;
+  }
+
+  .btn-github {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+}
+
+/* Pantallas extra pequeñas */
+@media (max-width: 360px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  .contenedor_foto_perfil {
+    width: 120px;
+    height: 120px;
   }
 }
